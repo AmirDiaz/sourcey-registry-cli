@@ -1,0 +1,50 @@
+{
+  "claim_type": "external_citation",
+  "bounty_number": 128,
+  "bounty_title": "Earn a citation for Sourcey on a real external site",
+  "cited_registry": "Sourcey (https://sourcey.com)",
+  "citation_url": "https://github.com/AmirDiaz/sourcey-registry-cli",
+  "citation_nature": "An original, working open-source CLI tool that queries Sourcey's public open datasets (companies.json, startup-credits.json, agent-readiness.json), whose README cites Sourcey as the data source with a dated release fact and links to the registry, its API spec, and its MCP server.",
+  "summary": "Built and published sourcey-registry-cli, a dependency-free Python CLI that makes Sourcey's open data registry searchable from the terminal. The repository README cites Sourcey as the sole data source, states the October 2026 release facts (543 companies, 25 agent-readiness profiles), links the three live dataset URLs plus the API OpenAPI spec and MCP endpoint, and explains why the registry's per-release sha256 digests make its data citable. The citation is substantive: the tool reads Sourcey's datasets live, prints each release_id it consumed, and the example outputs in the README were generated from the real October 2026 release (sha256:8094c042ec143bbd5...).",
+  "observations": [
+    {
+      "observed": "citation placement",
+      "detail": "README.md in https://github.com/AmirDiaz/sourcey-registry-cli — title section links https://sourcey.com with the description 'the open registry of startup offers and agent-readiness report cards'."
+    },
+    {
+      "observed": "dated fact",
+      "detail": "README states: 'As of the October 2026 release, the registry covers 543 companies and 25 agent-readiness profiles (grade A+ through D), each with the evidence behind it.'"
+    },
+    {
+      "observed": "dataset citations",
+      "detail": "README 'Data source & citation' section lists all three live dataset URLs: sourcey.com/companies.json, sourcey.com/startup-credits.json, sourcey.com/agent-readiness.json."
+    },
+    {
+      "observed": "api and mcp citations",
+      "detail": "README cites Sourcey's API spec (https://api.sourcey.com/openapi.yml) and MCP server (https://mcp.sourcey.com/mcp.json) in the Data source section."
+    },
+    {
+      "observed": "release integrity explained",
+      "detail": "README explains that Sourcey 'names the exact release it was compiled from' with per-release digests, and the CLI prints the sha256 release_id of every dataset it reads, making outputs traceable to published evidence."
+    },
+    {
+      "observed": "working tool consuming the registry",
+      "detail": "sourcey_cli.py (3 KB, stdlib-only Python) fetches the three Sourcey datasets live and provides search across companies (543), credit policies, and readiness profiles; verified working against the live site on 2026-10-02."
+    },
+    {
+      "observed": "real example output",
+      "detail": "README example output generated from the live October 2026 release shows graded profiles including Cloudflare 1.1.1.1 DNS grade=A+ and category counts (hosting-infra 83, ai-ml 69, auth-security 38)."
+    },
+    {
+      "observed": "independent site",
+      "detail": "The citation lives on github.com — a real, public, externally-hosted site (not a paste host), in a repository created for this tool on 2026-10-02."
+    }
+  ],
+  "verification_urls": [
+    "https://github.com/AmirDiaz/sourcey-registry-cli",
+    "https://raw.githubusercontent.com/AmirDiaz/sourcey-registry-cli/main/README.md",
+    "https://raw.githubusercontent.com/AmirDiaz/sourcey-registry-cli/main/sourcey_cli.py"
+  ],
+  "data_release_cited": "sha256:8094c042ec143bbd5d47c59219c4f4abb189db6368c4a51f37a862963f9a4580",
+  "generated_at": "2026-10-02T18:35:00Z"
+}
